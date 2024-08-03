@@ -28,13 +28,12 @@ function encriptar() {
   // Se captura el elemento texto_Descifrar:
   textoEncriptado = document.getElementById("texto_Descifrar"); 
 
-  if (tratarAcentos(textoPorEncriptar) && true) {
+  if (tratarAcentos(textoPorEncriptar) || tratarEspeciales(textoPorEncriptar)) {
     alert("Recuerda no utilizar acentos o caracteres especiales!");
   } 
   
-  else 
+  else // Encriptación:
   {
-    // Encriptación:
     for (k = 0; k < textoPorEncriptar.length; k++) {
       //console.log(textoPorEncriptar[k]); // Sonda OK.
 
@@ -79,9 +78,7 @@ function tratarAcentos(cadena) {
   flag = false; // Bandera para indicar presencia/ausencia de acentos.
 
   // Lista de caracteres acentuados extraida de la Tabla Unicode usando ChatGPT:
-  const caracteresAcentuados = "àáâãäāăąǎǟǡǻȁȃȧǡắằẳẵặảấầẩẫậæèéêëēĕėęěȅȇėẽẹẻếềể \
-    ễệìíîïĩīĭįǐȉȋỉịòóôõöōŏőǒǫǭȍȏǫồốổỗộớờởỡợùúûüũūŭůűųưǔȕȗủứừửữựỳýŷÿȳỹỵỷỷ \
-    ḃćĉċčçďḋḍḏđḟĝğġģĥȟḧḩḫħĵķĺļľḷḹḿṁńņňṅṇṉñṗŕŗřśŝşšṣṡṣťŧṭṯṳṽŵẁẃẅýẋźżžẓẕß";
+  const caracteresAcentuados = "àáâãäāăąǎǟǡǻȁȃȧǡắằẳẵặảấầẩẫậæèéêëēĕėęěȅȇėẽẹẻếềểễệìíîïĩīĭįǐȉȋỉịòóôõöōŏőǒǫǭȍȏǫồốổỗộớờởỡợùúûüũūŭůűųưǔȕȗủứừửữựỳýŷÿȳỹỵỷỷḃćĉċčçďḋḍḏđḟĝğġģĥȟḧḩḫħĵķĺļľḷḹḿṁńņňṅṇṉñṗŕŗřśŝşšṣṡṣťŧṭṯṳṽŵẁẃẅýẋźżžẓẕß";
 
   for (let i = 0; i < cadena.length; i++) {
     // Verificar si el carácter actual está en la lista de caracteres acentuados:
@@ -94,6 +91,37 @@ function tratarAcentos(cadena) {
       flag = false;
     }
   }
+
+  return flag;
+}
+
+
+
+function tratarEspeciales(cadena) {
+  flag = false; // Bandera para indicar presencia/ausencia de caracteres especiales.
+
+  // Lista de caracteres especiales extraida de la Tabla Unicode usando ChatGPT:
+  const caracteresEspeciales = ".,:;¨¡!¿?#$%&'()*+-/<=>@[]^_`'{|}~└";
+  
+  // Busca los caracteres especiales:
+  for (let i = 0; i < cadena.length; i++) {
+    // Verificar si el carácter actual está en la lista de caracteres especiales:
+    if (caracteresEspeciales.includes(cadena[i])) {
+      flag = true; // Se encontró un carácter especial.
+      break; // Sale del for.
+    } 
+
+    else 
+    {
+      flag = false;
+    }
+  }
+
+  // Busca comillas dobles:
+  if(cadena.includes('"')){ flag = true;}
+
+  // Busca "\":
+  if(cadena.includes('\\')){ flag = true;}
 
   return flag;
 }
