@@ -15,16 +15,16 @@
       <h1>Encriptador de texto</h1>
     </header>
 
-    <main>
+    <main class="contenedor-ppal">
       
       <div>
-        <textarea id="text_Cifrar" name="cifrar" rows="5" cols="50" autofocus></textarea>
+        <textarea id="text_Cifrar" name="cifrar" rows="5" cols="50" placeholder="Ingrese el texto aquí" autofocus></textarea>
         <p class="info">Sólo letras minúsculas y sin acentos</p>
       </div>
 
       <div>
-        <button id="btn_encriptar" type="button">Encriptar</button>
-        <button id="btn_desencriptar" type="button">Desencriptar</button>
+        <button id="btn_encriptar" type="button" onclick="encriptar();">Encriptar</button>
+        <button id="btn_desencriptar" type="button" onclick="desencriptar();">Desencriptar</button>
       </div>
 
       <div>
