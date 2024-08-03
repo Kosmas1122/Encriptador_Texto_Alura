@@ -16,6 +16,8 @@ const a = "ai";
 const o = "ober";
 const u = "ufat";
 
+
+
 function encriptar() {
   let textoPorEncriptar = "";
   let textoEncriptado = "";
@@ -35,8 +37,7 @@ function encriptar() {
   else // Encriptación:
   {
     for (k = 0; k < textoPorEncriptar.length; k++) {
-      //console.log(textoPorEncriptar[k]); // Sonda OK.
-
+    
       switch (textoPorEncriptar[k]) {
         case "e":
           llave = e;
