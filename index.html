@@ -6,31 +6,39 @@
     <title>Encriptador de Texto</title>
 
     <!-- Reset CSS -->
-    <link rel="stylesheet" href="./styles/reset.css">
+    <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
     <!-- Estilo CSS -->
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
+
   <body>
     <header>
+      <img class="logo" src="./images/Logo Alura.png" alt="Logo de Alura">
       <h1>Encriptador de texto</h1>
     </header>
 
     <main class="contenedor-ppal">
       
-      <div>
-        <textarea id="texto_Cifrar" rows="5" cols="50" placeholder="Ingrese el texto aquí" autofocus></textarea>
-        <p class="info">Sólo letras minúsculas, sin acentos, ni caracteres especiales.</p>
-      </div>
+      <section>
+        <textarea id="texto_Cifrar" class="text-area" rows="5" cols="50" placeholder="Ingrese el texto aquí" autofocus></textarea>
 
-      <div>
-        <button id="btn_encriptar" type="button" onclick="encriptar();">Encriptar</button>
-        <button id="btn_desencriptar" type="button" onclick="desencriptar();">Desencriptar</button>
-      </div>
+				<div>
+					<h6 class="info">Sólo letras minúsculas, sin acentos, ni caracteres especiales.</h6>
+				</div>
 
-      <div>
-        <textarea id="texto_Descifrar" rows="5" cols="50"></textarea>
-        <button id="btn_copiar" type="button">Copiar</button>
-      </div>
+				<div class="botones">
+					<button id="btn_encriptar" type="button" onclick="encriptar();">Encriptar</button>
+					<button id="btn_desencriptar" type="button" onclick="desencriptar();">Desencriptar</button>
+      	</div>
+      </section>
+
+      <section>
+				<textarea id="texto_Descifrar" class="text-area" rows="5" cols="50"></textarea>
+				
+				<div>
+					<button id="btn_copiar" type="button">Copiar</button>
+				</div>
+      </section>
 
     </main>
 
