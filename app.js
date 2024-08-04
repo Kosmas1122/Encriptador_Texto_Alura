@@ -94,6 +94,9 @@ function encriptar() {
     // Se captura el elemento texto_Descifrar:
     textoEncriptado = document.getElementById("texto_Descifrar"); 
     textoEncriptado.value = cadenaEncriptada;
+
+    // Se limpia el campo de Encriptar:
+    document.getElementById("texto_Cifrar").value = "";
   }
 
   return;
