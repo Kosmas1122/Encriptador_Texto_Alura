@@ -194,3 +194,17 @@ function desencriptar() {
 
   return;
 }
+
+
+
+function copiar() {
+  let texto_input = "";
+  let texto_output = "";
+
+  texto_input = document.getElementById("texto_input");
+  texto_output = document.getElementById("texto_output");
+
+  texto_input.value = texto_output.value;
+  document.getElementById("texto_output").value = "";
+
+}
