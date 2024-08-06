@@ -95,8 +95,11 @@ function encriptar() {
     textoEncriptado = document.getElementById("texto_output"); 
     textoEncriptado.value = cadenaEncriptada;
 
-    // Se limpia el campo de Encriptar:
+    // Se limpia el campo de texto_input:
     document.getElementById("texto_input").value = "";
+
+    // Se hace foco en el campo texto_input:
+    document.getElementById("texto_input").focus();
   }
 
   return;
