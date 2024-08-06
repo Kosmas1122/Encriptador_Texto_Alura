@@ -37,7 +37,7 @@ function encriptar() {
 
 
   // Se captura el texto a encriptar:
-  textoPorEncriptar = document.getElementById("texto_Cifrar").value; 
+  textoPorEncriptar = document.getElementById("texto_input").value; 
 
   // Se verifica si hay presencia/ausencia de letras mayúsculas:
   if(tratarMayusculas(textoPorEncriptar)){
@@ -91,12 +91,12 @@ function encriptar() {
       cadenaEncriptada = cadenaEncriptada + llave;
     }
 
-    // Se captura el elemento texto_Descifrar:
-    textoEncriptado = document.getElementById("texto_Descifrar"); 
+    // Se captura el elemento texto_output:
+    textoEncriptado = document.getElementById("texto_output"); 
     textoEncriptado.value = cadenaEncriptada;
 
     // Se limpia el campo de Encriptar:
-    document.getElementById("texto_Cifrar").value = "";
+    document.getElementById("texto_input").value = "";
   }
 
   return;
@@ -174,7 +174,7 @@ function desencriptar() {
   let textoPorDesencriptar = "";  // Cadena que guarda el texto a desencriptar.
   
   // Se captura el texto a desencriptar:
-  textoPorDesencriptar = document.getElementById("texto_Cifrar").value;
+  textoPorDesencriptar = document.getElementById("texto_input").value;
 
   // Desencriptación:
   textoPorDesencriptar = textoPorDesencriptar.replaceAll(a, "a");
@@ -184,10 +184,10 @@ function desencriptar() {
   textoPorDesencriptar = textoPorDesencriptar.replaceAll(u, "u");
 
   // Se limpia el campo de Encriptar:
-  document.getElementById("texto_Cifrar").value = "";
+  document.getElementById("texto_input").value = "";
 
   // Se muestra el resultado:
-  document.getElementById("texto_Descifrar").value = textoPorDesencriptar;
+  document.getElementById("texto_output").value = textoPorDesencriptar;
 
   return;
 }
