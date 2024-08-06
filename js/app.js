@@ -167,3 +167,27 @@ function tratarEspeciales(cadena) {
 
   return flag;
 }
+
+
+
+function desencriptar() {
+  let textoPorDesencriptar = "";  // Cadena que guarda el texto a desencriptar.
+  
+  // Se captura el texto a desencriptar:
+  textoPorDesencriptar = document.getElementById("texto_Cifrar").value;
+
+  // Desencriptación:
+  textoPorDesencriptar = textoPorDesencriptar.replaceAll(a, "a");
+  textoPorDesencriptar = textoPorDesencriptar.replaceAll(e, "e");
+  textoPorDesencriptar = textoPorDesencriptar.replaceAll(i, "i");
+  textoPorDesencriptar = textoPorDesencriptar.replaceAll(o, "o");
+  textoPorDesencriptar = textoPorDesencriptar.replaceAll(u, "u");
+
+  // Se limpia el campo de Encriptar:
+  document.getElementById("texto_Cifrar").value = "";
+
+  // Se muestra el resultado:
+  document.getElementById("texto_Descifrar").value = textoPorDesencriptar;
+
+  return;
+}
