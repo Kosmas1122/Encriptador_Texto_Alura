@@ -6,7 +6,8 @@
     <title>Encriptador de Texto</title>
 
     <!-- Estilo CSS -->
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link id="theme-stylesheet" rel="stylesheet" href="./styles/styleForest.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
 
   <body>
@@ -34,7 +35,9 @@
 				
 				<div>
 					<button id="btn_copiar" type="button" onclick="copiar();">Copiar en input</button>
-				</div>
+          <button onclick="cambiarEstilo('./styles/styleForest.css');">Forest</button>
+          <button onclick="cambiarEstilo('./styles/styleArtic.css');">Artic</button>
+        </div>
       </section>
     </main>
 
@@ -43,6 +46,8 @@
     </footer>
 
     <script src="./app.js"></script>
+
+    
 
   </body>
 </html>

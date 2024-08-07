@@ -208,3 +208,10 @@ function copiar() {
   document.getElementById("texto_output").value = "";
 
 }
+
+
+
+function cambiarEstilo(estilo){
+  document.getElementById('theme-stylesheet').setAttribute('href', estilo);
+}
+        
