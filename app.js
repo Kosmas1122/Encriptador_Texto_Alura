@@ -41,7 +41,8 @@ function encriptar() {
 
   // Se verifica si hay presencia/ausencia de letras mayúsculas:
   if(tratarMayusculas(textoPorEncriptar)){
-    alert("¡Recuerda solo usar letras minúsculas!");
+    /* alert("¡Recuerda solo usar letras minúsculas!"); */
+    msgEmergente("¡Recuerda solo usar letras minúsculas!");
     flagMinusculas = false;
   }
 
@@ -207,4 +208,25 @@ function copiar() {
   texto_input.value = texto_output.value;
   document.getElementById("texto_output").value = "";
 
+}
+
+
+
+function msgEmergente(mensaje) {
+  let div = document.getElementById("mensaje"); 
+  div.value = mensaje;
+
+  //alert("Entró en la función de mensaje emergente") // Sonda OK.
+  //alert(div.value); // Sonda OK.
+
+  if(div.style.display === "none" || div.style.display==""){
+    //alert("Entró en el if!!") // Sonda OK.
+    div.style.display = "block";
+  }
+  else{
+    alert("Entró en el else!!") // Sonda OK.
+    div.style.display == "";
+  }
+
+  return;
 }
