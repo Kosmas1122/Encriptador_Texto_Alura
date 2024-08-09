@@ -158,6 +158,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	gap: 10px;
 
 	font-family: "M PLUS 1 Code", monospace;
 	font-weight: 400;

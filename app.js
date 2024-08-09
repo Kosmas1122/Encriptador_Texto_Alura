@@ -41,20 +41,20 @@ function encriptar() {
 
   // Se verifica si hay presencia/ausencia de letras mayúsculas:
   if(tratarMayusculas(textoPorEncriptar)){
-    alert("¡Recuerda solo usar letras minúsculas!");
     flagMinusculas = false;
+    alert("¡Recuerda solo usar letras minúsculas!");
   }
 
   // Se verifica si hay presencia/ausencia de acentos:
   if(tratarAcentos(textoPorEncriptar)){
-    alert("¡Recuerda no utilizar acentos!");
     flagSinAcentos = false;
+    alert("¡Recuerda no utilizar acentos!");
   }
 
   // Se verifica si hay presencia/ausencia de caracteres especiales:
   if(tratarEspeciales(textoPorEncriptar)){
-    alert("¡Recuerda no utilizar caracteres especiales!");
     flagSinEspeciales = false;
+    alert("¡Recuerda no utilizar caracteres especiales!");
   }
 
   
