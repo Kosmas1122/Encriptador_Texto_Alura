@@ -41,21 +41,23 @@ function encriptar() {
 
   // Se verifica si hay presencia/ausencia de letras mayúsculas:
   if(tratarMayusculas(textoPorEncriptar)){
+    flagMinusculas = false;
     /* alert("¡Recuerda solo usar letras minúsculas!"); */
     msgEmergente("¡Recuerda solo usar letras minúsculas!");
-    flagMinusculas = false;
   }
 
   // Se verifica si hay presencia/ausencia de acentos:
   if(tratarAcentos(textoPorEncriptar)){
-    alert("¡Recuerda no utilizar acentos!");
     flagSinAcentos = false;
+    /* alert("¡Recuerda no utilizar acentos!"); */
+    msgEmergente("¡Recuerda no utilizar acentos!");
   }
 
   // Se verifica si hay presencia/ausencia de caracteres especiales:
   if(tratarEspeciales(textoPorEncriptar)){
-    alert("¡Recuerda no utilizar caracteres especiales!");
     flagSinEspeciales = false;
+    /* alert("¡Recuerda no utilizar caracteres especiales!"); */
+    msgEmergente("¡Recuerda no utilizar caracteres especiales!");
   }
 
   
@@ -213,19 +215,14 @@ function copiar() {
 
 
 function msgEmergente(mensaje) {
-  let div = document.getElementById("mensaje"); 
-  div.value = mensaje;
+  let elemento = document.getElementById("mensaje"); 
+  elemento.innerHTML = mensaje;
 
-  //alert("Entró en la función de mensaje emergente") // Sonda OK.
-  //alert(div.value); // Sonda OK.
-
-  if(div.style.display === "none" || div.style.display==""){
-    //alert("Entró en el if!!") // Sonda OK.
-    div.style.display = "block";
+  if(elemento.style.display === "none" || elemento.style.display==""){
+    elemento.style.display = "block";
   }
   else{
-    alert("Entró en el else!!") // Sonda OK.
-    div.style.display == "";
+    elemento.style.display = "none";
   }
 
   return;

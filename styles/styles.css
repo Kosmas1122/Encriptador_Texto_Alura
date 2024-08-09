@@ -193,15 +193,27 @@ span{
 }
 
 #mensaje {
-	width: 200px;
-	height: 100px;
-	background-color:darkgray;
 	display: none;
+	width: 300px;
+	height: 150px;
 	position: fixed;
-	top: 50%;
-	left: 50%;
+	top: 30%;
 	z-index: 100;
+
+	border: 2px solid var(--color-1);
+	border-radius: 15px;
+	background-color: var(--color-5);
+	box-shadow: 5px 5px 15px var(--color-1);
+	
+	padding: 30px;
+	font-family: "M PLUS 1 Code", monospace;
+	font-size: 150%;
+	color: var(--color-1);
+	font-weight: bold;
+	text-align: center;
+	align-items: center;
 }
+
 
 
 /* Estilos para dispositivos móviles (vertical) */
