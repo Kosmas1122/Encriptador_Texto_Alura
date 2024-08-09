@@ -170,6 +170,14 @@ span{
 	font-weight: bold;
 }
 
+.icono1{
+	width: 22px;
+}
+
+.icono2{
+	width: 28px;
+}
+
 #btn_encriptar, #btn_desencriptar {
 	width: 120px;
 	height: 30px;
