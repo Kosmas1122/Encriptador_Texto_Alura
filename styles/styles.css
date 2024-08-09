@@ -9,17 +9,26 @@
 	--color-3: #f8961e;	
 	--color-4: #ffd23f;
 	--color-5: #eaeaea;
-	--color-6: #ffffff; */ 
-	
+	--color-6: #ffffff; */
 	
 	/* Paleta Colores 2 */
-	--color-1: #273248;
+	/* --color-1: #273248;
 	--color-2: #af4f41;
 	--color-3: #fc7643;
 	--color-4: #ffa364;
 	--color-5: #ffebd2;
+	--color-6: #ffffff; */
+
+
+	/* Paleta Colores 3 */
+	--color-1: #222831;
+	--color-2: #393e46;
+	--color-3: #ff5722;
+	--color-4: #ffa364;
+	--color-5: #eeeeee;
 	--color-6: #ffffff;
-	
+	--color-7: rgb(255, 87, 34, 15%);
+	--color-8: rgb(34, 40, 49, 60%);
 }
 
 
@@ -100,7 +109,7 @@ main {
 .seccion_output{
 	flex-grow: 1;
 	width: 98%;
-	margin-bottom: 8px;
+	margin-bottom: 45px;
 
 	display: flex;
 	flex-direction: column;
@@ -132,7 +141,7 @@ main {
 	padding: 10px;
 	border: 1px solid var(--color-3);
 	border-radius: 12px;
-	background-color: var(--color-3);
+	background-color: var(--color-7);
 	box-shadow: 0px 0px 15px var(--color-3);
 	
 	font-family: "M PLUS 1 Code", monospace;
@@ -142,7 +151,8 @@ main {
 }
 
 footer {
-	margin-bottom: 4px;
+	margin-top: 10px;
+	margin-bottom: 8px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
