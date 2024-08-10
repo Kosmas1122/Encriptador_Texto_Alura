@@ -27,13 +27,15 @@ La letra "u" es convertida para "ufat"
 [Volver al inicio](#1-encriptador-de-texto)
 
 
-## 4. Instalación
+## 4. Instalación. 
+
 Clonar repositorio y abrir archivo **index.html** en un navegador web.   
 
 [Volver al inicio](#1-encriptador-de-texto)
 
 
-## 5. Uso
+## 5. Uso. 
+
 <p style="text-align: justify;"> 
 La interfaz del Encriptador de texto consta de dos áreas muy bien definidas (texto de entrada y texto de salida). En el área de entrada se ingresa el texto a encriptar o desencriptar. Se dispone entonces de dos botones en la parte inferior (<b>Encriptar</b> y <b>Desencriptar</b>) que permiten escoger la operación a realizar. El resultado aparecerá en el área de salida.  
 Se tiene también un botón <b>Copiar en Input</b> que permite copiar y pegar (en un solo paso) en el área de entrada el contenido que se tiene en el área de salida.  
