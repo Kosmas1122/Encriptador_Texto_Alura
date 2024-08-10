@@ -11,7 +11,7 @@
 
 
 
-## 3. Descripción
+## 3. Descripción.  
 <p style="text-align: justify;"> 
 Proyecto final para aplicar al programa ONE (Oracle Next Education) del grupo 7.  
 Con este desafío se busca poner a prueba y afianzar los conocimientos, aplicar lo aprendido y fortalecer nuestras habilidades de programación.  
@@ -27,15 +27,13 @@ La letra "u" es convertida para "ufat"
 [Volver al inicio](#1-encriptador-de-texto)
 
 
-## 4. Instalación. 
-
+## 4. Instalación.  
 Clonar repositorio y abrir archivo **index.html** en un navegador web.   
 
 [Volver al inicio](#1-encriptador-de-texto)
 
 
-## 5. Uso. 
-
+## 5. Uso.  
 <p style="text-align: justify;"> 
 La interfaz del Encriptador de texto consta de dos áreas muy bien definidas (texto de entrada y texto de salida). En el área de entrada se ingresa el texto a encriptar o desencriptar. Se dispone entonces de dos botones en la parte inferior (<b>Encriptar</b> y <b>Desencriptar</b>) que permiten escoger la operación a realizar. El resultado aparecerá en el área de salida.  
 Se tiene también un botón <b>Copiar en Input</b> que permite copiar y pegar (en un solo paso) en el área de entrada el contenido que se tiene en el área de salida.  
@@ -53,8 +51,7 @@ Dentro de los caracteres especiales se incluyeron signos de puntuación como son
 
 [Volver al inicio](#1-encriptador-de-texto)  
 
-## 6. Solución al mensaje secreto  
-
+## 6. Solución al mensaje secreto.  
 Entre los desafios finales del curso se solicitó descifrar el siguiente mensaje:  
 > fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober!  
 
@@ -79,8 +76,7 @@ Medellín, Colombia.
 [Volver al inicio](#1-encriptador-de-texto)  
 
 
-## 8. Créditos
-
+## 8. Créditos.  
 <p style="text-align: justify;">Este proyecto ha sido posible gracias a las enseñanzas y los recursos proporcionados por diversas personas y herramientas. Quiero expresar mi más sincero agradecimiento a: </p>
 
 ### **Profesores:**  
