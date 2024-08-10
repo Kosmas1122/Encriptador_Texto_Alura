@@ -71,8 +71,8 @@ header {
 }
 
 h1{
-	font-size: 170%;
 	margin-right: 15px;
+	font-size: 170%;
 	font-family: "M PLUS 1 Code", monospace;
 	font-weight: bolder;
 	color: var(--color-2);
@@ -246,6 +246,10 @@ span{
 
 	header {
 		height: 30px;
+	}
+
+	h1 {
+		font-size: 170%;
 	}
 
 	.logo{
