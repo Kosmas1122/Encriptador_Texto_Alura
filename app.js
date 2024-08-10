@@ -9,9 +9,9 @@ La letra "u" es convertida para "ufat"
 
 /* Requisitos:
 ----------------------------------
-* Debe funcionar solo con letras minúsculas.
-* No deben ser utilizados letras con acentos ni caracteres especiales.
-* Debe ser posible convertir una palabra para la versión encriptada también
+- Debe funcionar solo con letras minúsculas.
+- No deben ser utilizados letras con acentos ni caracteres especiales.
+- Debe ser posible convertir una palabra para la versión encriptada también
   devolver una palabra encriptada para su versión original.
 */
 
@@ -41,20 +41,20 @@ function encriptar() {
 
   // Se verifica si hay presencia/ausencia de letras mayúsculas:
   if(tratarMayusculas(textoPorEncriptar)){
-    alert("¡Recuerda solo usar letras minúsculas!");
     flagMinusculas = false;
+    alert("¡Recuerda solo usar letras minúsculas!");
   }
 
   // Se verifica si hay presencia/ausencia de acentos:
   if(tratarAcentos(textoPorEncriptar)){
-    alert("¡Recuerda no utilizar acentos!");
     flagSinAcentos = false;
+    alert("¡Recuerda no utilizar acentos!");
   }
 
   // Se verifica si hay presencia/ausencia de caracteres especiales:
   if(tratarEspeciales(textoPorEncriptar)){
-    alert("¡Recuerda no utilizar caracteres especiales!");
     flagSinEspeciales = false;
+    alert("¡Recuerda no utilizar caracteres especiales!");
   }
 
   
@@ -123,7 +123,7 @@ function tratarAcentos(cadena) {
   flag = false; // Bandera para indicar presencia/ausencia de acentos.
 
   // Lista de caracteres acentuados extraida de la Tabla Unicode usando ChatGPT:
-  const caracteresAcentuados = "àáâãäāăąǎǟǡǻȁȃȧǡắằẳẵặảấầẩẫậæèéêëēĕėęěȅȇėẽẹẻếềểễệìíîïĩīĭįǐȉȋỉịòóôõöōŏőǒǫǭȍȏǫồốổỗộớờởỡợùúûüũūŭůűųưǔȕȗủứừửữựỳýŷÿȳỹỵỷỷḃćĉċčçďḋḍḏđḟĝğġģĥȟḧḩḫħĵķĺļľḷḹḿṁńņňṅṇṉñṗŕŗřśŝşšṣṡṣťŧṭṯṳṽŵẁẃẅýẋźżžẓẕß";
+  const caracteresAcentuados = "àáâãäāăąǎǟǡǻȁȃȧǡắằẳẵặảấầẩẫậæèéêëēĕėęěȅȇėẽẹẻếềểễệìíîïĩīĭįǐȉȋỉịòóôõöōŏőǒǫǭȍȏǫồốổỗộớờởỡợùúûüũūŭůűųưǔȕȗủứừửữựỳýŷÿȳỹỵỷỷḃćĉċčçďḋḍḏđḟĝğġģĥȟḧḩḫħĵķĺļľḷḹḿṁńņňṅṇṉṗŕŗřśŝşšṣṡṣťŧṭṯṳṽŵẁẃẅýẋźżžẓẕß";
 
   for (let i = 0; i < cadena.length; i++) {
     // Verificar si el carácter actual está en la lista de caracteres acentuados:
