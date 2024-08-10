@@ -3,10 +3,11 @@
 ## 2. Índice de Contenidos
 [3. Descripción](#3-descripción)  
 [4. Instalación](#4-instalación)  
-[5. Uso](#5-uso)
-[6. Solución mensaje secreto](#6-solución-al-mensaje-secreto)
+[5. Uso](#5-uso)  
+[6. Solución mensaje secreto](#6-solución-al-mensaje-secreto)  
 [7. Autor](#7-autor)  
-[8. Créditos](#8-créditos)
+[8. Créditos](#8-créditos)  
+
 
 
 
