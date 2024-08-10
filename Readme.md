@@ -26,12 +26,10 @@ La letra "u" es convertida para "ufat"
 
 [Volver al inicio](#1-encriptador-de-texto)
 
-
 ## 4. Instalación.  
 Clonar repositorio y abrir archivo **index.html** en un navegador web.   
 
 [Volver al inicio](#1-encriptador-de-texto)
-
 
 ## 5. Uso.  
 <p style="text-align: justify;"> 
@@ -74,7 +72,6 @@ Medellín, Colombia.
 <a href="http://www.linkedin.com/in/david-barrios-escobar-fust-meceng" target="_blank">LinkedIn</a>
 
 [Volver al inicio](#1-encriptador-de-texto)  
-
 
 ## 8. Créditos.  
 <p style="text-align: justify;">Este proyecto ha sido posible gracias a las enseñanzas y los recursos proporcionados por diversas personas y herramientas. Quiero expresar mi más sincero agradecimiento a: </p>
