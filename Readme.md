@@ -51,7 +51,7 @@ Dentro de los caracteres especiales se incluyeron signos de puntuación como son
 
 [Volver al inicio](#1-encriptador-de-texto)  
 
-## 6. Solución al mensaje secreto. 
+## 6. Solución al mensaje secreto  
 
 Entre los desafios finales del curso se solicitó descifrar el siguiente mensaje:  
 > fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober!  
