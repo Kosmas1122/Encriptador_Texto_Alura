@@ -56,6 +56,7 @@ Entre los desafios finales del curso se solicitó descifrar el siguiente mensaje
 > fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober!  
 
 Usando el encriptador tenemos:  
+
 ![Entrada mensaje secreto](./images/Solución%20Mensaje%20Secreto_Entrada.jpg)
 
 Al presionar el botón **Desencriptar** se obtiene el mensaje secreto:  
