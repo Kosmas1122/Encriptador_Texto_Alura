@@ -3,9 +3,11 @@
 ## 2. Índice de Contenidos
 [3. Descripción](#3-descripción)  
 [4. Instalación](#4-instalación)  
-[5. Uso](#5-uso)  
-[6. Autor](#6-autor)  
-[7. Créditos](#7-créditos)
+[5. Uso](#5-uso)
+[6. Solución mensaje secreto](#6-solución-al-mensaje-secreto)
+[7. Autor](#7-autor)  
+[8. Créditos](#8-créditos)
+
 
 
 ## 3. Descripción
@@ -48,7 +50,23 @@ Dentro de los caracteres especiales se incluyeron signos de puntuación como son
 
 [Volver al inicio](#1-encriptador-de-texto)  
 
-## 6. Autor
+## 6. Solución al mensaje secreto
+Entre los desafios finales del curso se solicitó descifrar el siguiente mensaje:  
+> fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober!  
+
+Usando el encriptador tenemos:  
+![Entrada mensaje secreto](./images/Solución%20Mensaje%20Secreto_Entrada.jpg)
+
+Al presionar el botón **Desencriptar** se obtiene el mensaje secreto:  
+
+![Salida mensaje secreto](./images/Solución%20Mensaje%20Secreto_Salida.jpg)  
+
+El mensaje:  
+> felicidades por enfrentar este desafio y haberlo concluido con exito  
+
+[Volver al inicio](#1-encriptador-de-texto)
+
+## 7. Autor
 **David Barrios Escobar**  
 Medellín, Colombia.   
 <a href="http://www.linkedin.com/in/david-barrios-escobar-fust-meceng" target="_blank">LinkedIn</a>
@@ -56,7 +74,7 @@ Medellín, Colombia.
 [Volver al inicio](#1-encriptador-de-texto)  
 
 
-## 7. Créditos
+## 8. Créditos
 <p style="text-align: justify;">Este proyecto ha sido posible gracias a las enseñanzas y los recursos proporcionados por diversas personas y herramientas. Quiero expresar mi más sincero agradecimiento a: </p>
 
 ### **Profesores:**  
