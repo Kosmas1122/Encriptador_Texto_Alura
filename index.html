@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
 
-  <body>
+  <body id="contenedor-ppal">
     <header>
       <img class="logo" src="./images/Logo Alura.png" alt="Logo de Alura">
       <h1>Encriptador de texto</h1>
     </header>
 
-    <main id="contenedor-ppal">
+    <main>
       <section class="seccion_input">
         <textarea id="texto_input" class="text-area" rows="5" cols="50" placeholder="Ingrese el texto aquí" autofocus></textarea>
 
@@ -47,7 +47,16 @@
 
     </footer>
 
-    <script src="./app.js"></script>
+    <!-- Bloque para efecto velo (Overlay): -->
+    <div id="overlay"></div>
 
+    <!-- Mensaje Pop-up: -->
+    <div id="popup" onclick="offMsgPopUp('');">
+      <div id="popup_banner"> Encriptador Alura - ONE </div> 
+      <p id="popup_msg"></p> 
+    </div>
+
+    <!-- Script: -->
+    <script src="./app.js"></script>
   </body>
 </html>

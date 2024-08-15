@@ -42,19 +42,19 @@ function encriptar() {
   // Se verifica si hay presencia/ausencia de letras mayúsculas:
   if(tratarMayusculas(textoPorEncriptar)){
     flagMinusculas = false;
-    alert("¡Recuerda solo usar letras minúsculas!");
+    MsgPopUp("¡Recuerda solo usar letras minúsculas!");
   }
 
   // Se verifica si hay presencia/ausencia de acentos:
   if(tratarAcentos(textoPorEncriptar)){
     flagSinAcentos = false;
-    alert("¡Recuerda no utilizar acentos!");
+    MsgPopUp("¡Recuerda no utilizar acentos!");
   }
 
   // Se verifica si hay presencia/ausencia de caracteres especiales:
   if(tratarEspeciales(textoPorEncriptar)){
     flagSinEspeciales = false;
-    alert("¡Recuerda no utilizar caracteres especiales!");
+    MsgPopUp("¡Recuerda no utilizar caracteres especiales!");
   }
 
   
@@ -207,4 +207,19 @@ function copiar() {
   texto_input.value = texto_output.value;
   document.getElementById("texto_output").value = "";
 
+}
+
+
+
+function MsgPopUp(msg) {
+  document.getElementById("overlay").style.display = "block";
+  document.getElementById("popup").style.display = "flex";
+  document.getElementById("popup_msg").innerHTML = msg;
+}
+
+
+
+function offMsgPopUp(){
+  document.getElementById("overlay").style.display = "none";
+  document.getElementById("popup").style.display = "none";
 }
