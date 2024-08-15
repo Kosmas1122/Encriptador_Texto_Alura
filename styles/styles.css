@@ -27,6 +27,7 @@
   --color-6: #ffffff;
   --color-7: rgb(255, 87, 34, 15%);
   --color-8: rgb(34, 40, 49, 60%);
+  --color-overlay: rgba(210, 210, 210, 0.85);
 }
 
 * {
@@ -74,12 +75,13 @@ h1 {
   color: var(--color-2);
 }
 
-#contenedor-ppal {
+main {
   flex-grow: 1;
   display: flex;
   justify-content: space-between;
   gap: 10px;
   width: 98%;
+  z-index: 1;
 }
 
 .seccion_input {
@@ -219,7 +221,7 @@ span {
     width: 30px;
   }
 
-  #contenedor-ppal {
+  main {
     flex-direction: column;
     align-items: center;
   }
@@ -249,7 +251,7 @@ span {
     width: 20px;
   }
 
-  #contenedor-ppal {
+  main {
     flex-direction: row;
   }
 
